@@ -57,8 +57,9 @@ html, body {
 }
 #nav {
     list-style: none;
-    position: absolute;
-    top: -5px;
+    position: relative;
+    top: -50px;
+    left: 0px;
     padding: 0;
     margin: 0;
     font-size: .5em;
@@ -137,6 +138,7 @@ html, body {
 #tmp-page {
     display: none;  /* Purely for js reference */
 }
+<<<<<<< HEAD
 
 .content-wrapper {
     position: absolute;
@@ -178,3 +180,5 @@ html, body {
         font-size: 4em;
     }
 }
+=======
+>>>>>>> 08d5633f0afb68280bdf118744f04fc35b279852
