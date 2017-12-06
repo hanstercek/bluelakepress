@@ -2,30 +2,22 @@ html, body {
     height: 100vh;
     width: 100vw;
 }
-.nav-link {
+a {
     text-decoration: none;
     color: #222;
     font-family: 'Julius Sans One', Arial, sans-serif;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-.struck {
-    text-decoration: line-through;
-}
-.italic {
-    font-style: italic;
 }
 #scroller {
     position: fixed;
         right: 0;
-        z-index: 2;
+        z-index: 4;
     writing-mode: tb-rl;
     background-color: white;
     width: 1.4em;
     height: 100%;
     overflow: hidden;
 }
-.scroll-text {
+#scroll-text {
     font-family: 'Julius Sans One', 'Times New Roman', serif;
     font-style: bold;
     position: absolute;
@@ -78,7 +70,6 @@ html, body {
         z-index: 5;
     text-align: left;
     width: auto;
-    cursor: pointer;
 }
 #title h1 {
     position: relative;
@@ -135,33 +126,9 @@ html, body {
     width: auto;    /* Necessary to populate marquee! */
 }
 #tmp-page {
-    display: none;  /* Purely for js reference */
+    /*display: none;*/  /* Purely for js reference */
 }
 
-.content-wrapper {
-    position: absolute;
-    background-color: white;
-    z-index: 3;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 0.5s ease;
-}
-#about-wrapper {
-}
-#contact-wrapper {
-}
-#about-content, #contact-content {
-    width: 50%;
-    min-width: 300px;
-    position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-}
-#contact-content {
-    text-align: center;
-}
 @media (max-width: 600px) {
     .page {
         width: 300px;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 
     <title>Blue Lake Press</title>
     <meta name="description" content="Tufts literary magazine.">
@@ -21,7 +21,7 @@
     <meta name="twitter:image:src"     content="">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500|Lustria|Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500|Lustria|Julius+Sans+One|Lato" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css" type="text/css">
@@ -29,26 +29,45 @@
     <link rel="stylesheet" href="styles/index.css" type="text/css">
 </head>
 <body>
+    <div id="scroller">
+        <div class="scroll-text">^^ SCROLL ^^</div>
+    </div>
     <div id="nav-wrapper">
     </div>
     <div id="nav-button">
         <div id="nav-mask"></div>
         <ul id="nav">
-            <li><a href="more.html">more</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
+            <li class="nav-link struck" id="more">more</li>
+            <li class="nav-link" id="about">about</li>
+            <li class="nav-link" id="contact">contact</li>
         </ul>
     </div>
     <div id="title">
         <h1>Blue<br/> Lake Press</h1>
         <!-- <div id="marquee-cover"></div> -->
     </div>
-    <div id="page-cover"></div>
+    <!-- <div id="page-cover"></div> -->
     <div id="page-wrapper">
-        <div class="page" id="tmp-page"><img src="img/zines/placeholder.gif" /></div>
+        <img class="page" id="tmp-page" src="img/zines/placeholder.gif" />
     </div>
     <!-- <marquee id="scrolling" behavior="scroll" direction="left" scrollamount="10">scroll >>> scroll >> </marquee>
  -->
+
+    <!-- ABOUT -->
+    <div class="content-wrapper" id="about-wrapper">
+        <div id="about-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius sem vitae lectus molestie, ornare sollicitudin dui malesuada. Vivamus nisi leo, euismod in nunc et, convallis lobortis nisi. Mauris dolor enim, luctus sed est vitae, ornare condimentum leo. Aliquam vitae est facilisis, egestas urna ut, porta diam. Phasellus eget nulla aliquet, suscipit nisi aliquet, auctor dui. Nam dictum dictum ex, vitae volutpat tortor ullamcorper in. Mauris eros odio, tempor sit amet tincidunt at, dapibus eu sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque placerat dapibus eleifend. Morbi in luctus nunc.</p>
+            <p>Integer eu diam vehicula, auctor leo eget, consequat ante. Aliquam dapibus ante vel efficitur feugiat. Nulla vehicula in massa et viverra. Mauris porttitor metus eu felis vulputate, nec semper diam egestas. Proin laoreet faucibus dui, non posuere sapien blandit eget. Integer sit amet ligula tortor. Phasellus sollicitudin quis ante a fermentum. Cras sit amet auctor massa. Donec eu arcu enim. Sed accumsan tellus sit amet feugiat vehicula. Phasellus eget odio fringilla, egestas eros ut, dignissim justo. Aliquam gravida lorem vitae pretium interdum.</p>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="content-wrapper" id="contact-wrapper">
+        <div id="contact-content">
+            <p>bluelakepress@gmail.com</p>
+        </div>
+    </div>
+
 
     <!-- Scripts -->
     <script src="scripts/jquery-3.2.1.min.js"></script>
